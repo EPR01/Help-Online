@@ -2,10 +2,16 @@ body {
     color: #616161;
 }
 
+
+
 /*
 * Boton Menu Siderbar Canvas
 */
 
+
+/*
+* Collapse
+*/
 
 
 /*
@@ -21,7 +27,7 @@ body {
 }
 
 .bg-ford-blue {
-    background-color: red;
+    background-color: #003478;
 }
 
 .bg-ford-me-blue {
@@ -47,6 +53,12 @@ body {
     color: #f7f7f7;
 }
 
+.btn-a-white {
+    background-color: gold;
+}
+
+
+
 .btn-a-ford-blue:hover {
     background-color: #005498;
     color: #f7f7f7;
@@ -66,18 +78,17 @@ body {
     color: #f7f7f7;
 }
 
-.btn-ford-blue:hover {
-    background-color: #005498;
-    color: #f7f7f7;
-}
+    .btn-ford-blue:hover {
+        background-color: #005498;
+        color: #f7f7f7;
+    }
 
-.btn-ford-blue:focus {
-    color: #f7f7f7;
-    background-color: #003478;
-    border: 1px solid #003478;
-    box-shadow: 0px 0px 1px 4px #90acd4;
-
-}
+    .btn-ford-blue:focus {
+        color: #f7f7f7;
+        background-color: #003478;
+        border: 1px solid #003478;
+        box-shadow: 0px 0px 1px 4px #90acd4;
+    }
 
 /*
 * Estilos index.aspx
@@ -97,7 +108,7 @@ body {
     margin-top: 70px;
 }
 
-.carousel-item>img {
+.carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
@@ -137,53 +148,12 @@ body {
 }
 
 
-/*
-    Siderbar y Navbar
-*/
-.sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    transition: height;
-    padding-top: 50px;
-}
-
-@media (max-width: 767.98px) {
-    .sidebar {
-        top: 7rem;
-    }
-}
-
-.sidebar-sticky {
-    height: calc(100vh - 48px);
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.navbar .navbar-toggler {
-    top: .60rem;
-    right: .60rem;
-}
-
-@media (max-width: 767.98px) {
-    .container-fluid {
-        margin-bottom: 12px;
-    }
-
-    .mtb-auto {
-        margin-top: 0.60rem;
-        margin-bottom: 0.60rem;
-    }
-}
 
 
 
 /*
     Table
 */
-
 .table {
     font-size: 14px;
 }
@@ -197,10 +167,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
-
     .table .row-2,
     .table .row-3,
-    .table .row-5,
+    .table .row-6,
     .table .row-7 {
         display: none;
     }
@@ -208,4 +177,21 @@ body {
     .table {
         font-size: 14px;
     }
+}
+
+
+/*
+*   Styles input data-time
+*/
+
+.datatime {
+    border: 1px solid #bfbebe;
+    border-radius: 4px;
+    height: 26px;
+    padding: 3px
+}
+
+.datatime:double-button {
+    border: 1px solid red;
+
 }

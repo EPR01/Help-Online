@@ -20,7 +20,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <form class="d-flex ms-auto">
-                        <a href="./tickets.aspx" class="btn btn-a-ford-blue btn-sm fw-semibold" role="button">Tickets &raquo;</a>
+                        <a href="./tickets-usuario.aspx" class="btn btn-a-ford-blue btn-sm fw-semibold" role="button">Tickets &raquo;</a>
                     </form>
                 </div>
             </div>
