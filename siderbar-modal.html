@@ -1,0 +1,132 @@
+<style>
+        .dropdown-toggle {
+            outline: 0;
+        }
+
+        .btn-togglemodallsp {
+            padding: .25rem .5rem;
+            font-weight: 600;
+            color: rgba(0, 0, 0, .65);
+            background-color: transparent;
+        }
+
+        .btn-togglemodallsp:hover,
+        .btn-togglemodallsp:focus {
+            color: rgba(0, 0, 0, .85);
+            background-color: #d2f4ea;
+        }
+
+        .btn-togglemodallsp::before {
+            width: 1.25em;
+            line-height: 0;
+            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+            transition: transform .35s ease;
+            transform-origin: .5em 50%;
+        }
+
+        .btn-togglemodallsp[aria-expanded="true"] {
+            color: rgba(0, 0, 0, .85);
+        }
+
+        .btn-togglemodallsp[aria-expanded="true"]::before {
+            transform: rotate(90deg);
+        }
+
+        .btn-modal {
+            border: none;
+            background-color: rgb(248, 249, 250);
+            font-size: 14px;
+        }
+
+        .btn-togglemodallsp-nav .btn-modal {
+            padding: .1875rem .5rem;
+            margin-top: .125rem;
+            margin-left: 1.25rem;
+        }
+
+        .btn-togglemodallsp-nav .btn-modal:hover,
+        .btn-togglemodallsp-nav .btn-modal:focus {
+            background-color: #d2f4ea;
+        }
+
+        .scrollarea {
+            overflow-y: auto;
+        }
+
+        .max-height-row-modal {
+            height: 600px;
+        }
+    </style> 
+
+    <script>
+        function mostrarPdf(pathPdf, button) {
+            document.getElementById(button).onclick = function () {
+                document.getElementById('texto-lsp').style.display = 'none';
+                var href = document.getElementById(pathPdf).href;
+                document.querySelector("#vistapdf").setAttribute('src', href);
+            }
+        }
+    </script>
+
+
+<div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row max-height-row-modal">
+                            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light pt-3 pb-3 border-end">
+                                <ul class="list-unstyled ps-0 overflow-hidden">
+                                    <li class="mb-1">
+                                        <button
+                                            class="btn btn-togglemodallsp d-inline-flex align-items-center rounded border-0 collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+                                            aria-expanded="false">
+                                            Dashboard
+                                        </button>
+                                        <div class="collapse overflow-hidden" id="dashboard-collapse">
+                                            <ul class="btn-togglemodallsp-nav list-unstyled fw-normal pb-1 small">
+                                                <li class="mb-2">
+                                                    <a href="./pdfs/delete.pdf" id="pathPdf-1"
+                                                        style="display: none;">Mostrar</a>
+                                                    <button
+                                                        class="btn-modal link-dark d-inline-flex text-decoration-none rounded"
+                                                        id="enviar-1"
+                                                        onclick="mostrarPdf('pathPdf-1', 'enviar-1');">Delete</button>
+                                                </li>
+                                                <li class="mb-2">
+                                                    <a href="./pdfs/CARTA-ILUM.pdf" id="pathPdf-2"
+                                                        style="display: none;">Mostrar</a>
+                                                    <button
+                                                        class="btn-modal link-dark d-inline-flex text-decoration-none rounded"
+                                                        id="enviar-2"
+                                                        onclick="mostrarPdf('pathPdf-2', 'enviar-2');">Carta
+                                                        Ilum</button>
+                                                </li>
+                                                <li class="mb-2">
+                                                    <a href="./pdfs/CARTA-RECOMENDACION-BALPER.pdf" id="pathPdf-3"
+                                                        style="display: none;">Carta - Balper</a>
+                                                    <button
+                                                        class="btn-modal link-dark d-inline-flex text-decoration-none rounded"
+                                                        id="enviar-3"
+                                                        onclick="mostrarPdf('pathPdf-3', 'enviar-3');">Mostrar</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                            <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4 ">
+                                <div class="mt-5" id="texto-lsp">
+                                    <p class="fs-3 text-center">
+                                        Para visualizar una <span class="rounded-3 p-1"
+                                            style="background-color: rgb(201, 221, 255);">leccion de un solo
+                                            punto</span> aga click en
+                                        alguna de las
+                                        opciones
+                                        que se muentran en la barra lateral.
+                                    </p>
+                                </div>
+                                <iframe id="vistapdf" idframeborder="0" width="100%" height="100%"></iframe>
+                            </main>
+                        </div>
+                    </div>
+                </div>
