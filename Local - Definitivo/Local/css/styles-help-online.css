@@ -1,0 +1,297 @@
+body,
+span {
+    color: #616161;
+}
+
+/*
+* Estilos index.aspx
+*/
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 28rem;
+    margin-top: 70px;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 28rem;
+    object-fit: cover;
+}
+
+.menu-options {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.menu-options h2 {
+    font-weight: 400;
+}
+
+.menu-options .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+    .menu-options {
+        box-shadow: none;
+    }
+}
+
+.dropdown-toggle {
+    outline: 0;
+}
+
+.btn-togglemodallsp {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    background-color: transparent;
+}
+
+.btn-togglemodallsp:hover,
+.btn-togglemodallsp:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: rgb(201, 221, 255);
+}
+
+.btn-togglemodallsp::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+}
+
+.btn-togglemodallsp[aria-expanded="true"] {
+    color: rgba(0, 0, 0, .85);
+}
+
+.btn-togglemodallsp[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.btn-modal {
+    border: none;
+    background-color: rgb(248, 249, 250);
+    font-size: 14px;
+}
+
+.btn-togglemodallsp-nav .btn-modal {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+}
+
+.btn-togglemodallsp-nav .btn-modal:hover,
+.btn-togglemodallsp-nav .btn-modal:focus {
+    background-color: rgb(201, 221, 255);
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+
+
+/*
+* Estilos Dashboard
+*/
+
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        margin-top: 0.60rem;
+    }
+
+    .navbar-toggler {
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0px 0px 1px 3px #b7b7b7;
+    }
+}
+
+.text-nav {
+    color: #1e5a8b;
+}
+
+.text-nav:hover {
+    color: #1e5a8b;
+}
+
+.bg-span-light {
+    background-color: #ecf5ff;
+
+}
+
+.bg-ford-blue {
+    background-color: #003478;
+}
+
+.bg-ford-me-blue {
+    background-color: #1e5a8b;
+}
+
+.bg-white {
+    background-color: #f7f7f7;
+}
+
+.bg-ford-blue-light {
+    background-color: #f5faff;
+}
+
+.btn-menu {
+    background-color: white;
+    color: #616161;
+    border: none;
+
+}
+
+.btn-menu:hover {
+    background-color: white;
+    border: 1px solid rgb(141, 141, 141);
+    box-shadow: 0px 0px 1px 3px rgb(177, 177, 177);
+}
+
+.btn-menu:focus {
+    background-color: white;
+    border: none;
+}
+
+.btn-a-ford-blue {
+    background-color: #1e5a8b;
+    border: none;
+    color: #f7f7f7;
+}
+
+.btn-a-ford-blue:hover {
+    background-color: #143652;
+    border: none;
+    box-shadow: 0px 0px 1px 4px #99b8d3;
+    color: #f7f7f7;
+}
+
+.btn-white {
+    color: #616161;
+    font-weight: 500;
+    background-color: #ebebeb;
+    border: 1px solid #cfcfcf;
+}
+
+.btn-white:hover {
+    border: none;
+    background-color: #ebebeb;
+    box-shadow: 0px 0px 1px 3px rgb(182, 182, 182);
+}
+
+.btn-white:focus {
+    border: none;
+    background-color: #cfcfcf;
+}
+
+.btn-ford-blue {
+    background-color: #1e5a8b;
+    border: 1px solid #1e5a8b;
+    color: #f7f7f7;
+}
+
+.btn-ford-blue:hover {
+    background-color: #005498;
+    color: #f7f7f7;
+}
+
+.btn-ford-blue:focus {
+    color: #f7f7f7;
+    background-color: #003478;
+    border: 1px solid #003478;
+    box-shadow: 0px 0px 1px 4px #90acd4;
+}
+
+.btn-f-blue-lgt {
+    background-color: #005498;
+    border: none;
+    color: white;
+}
+
+.cdis:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.cdis:hover {
+    box-shadow: 0px 0px 1px 4px #c4def1;
+}
+
+.search-input {
+    border: none;
+}
+
+.border-gray {
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.search-input:focus {
+    box-shadow: 0px 0px 1px 4px rgb(177, 177, 177);
+}
+
+/*
+ *   Tabla
+*/
+
+.table {
+    font-size: 14px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f5faff;
+}
+
+@media (max-width: 767.98px) {
+
+    .table .row-2,
+    .table .row-3,
+    .table .row-6,
+    .table .row-7 {
+        display: none;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+}
+
+.datatime {
+    border: 1px solid #bfbebe;
+    border-radius: 4px;
+    height: 26px;
+    padding: 3px
+}
